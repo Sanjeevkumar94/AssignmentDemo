@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment Demo</string>
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="splash">Splash</string>
+
+</resources>

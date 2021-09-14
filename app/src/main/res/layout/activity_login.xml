@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.assignmentapp.ui.LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_user_name"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/TextInputLayoutGeneral">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:inputType="textEmailAddress"
+            tools:ignore="RtlSymmetry" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_pswd"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/TextInputLayoutGeneral"
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="@string/login"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/_48dp"
+            android:textSize="@dimen/text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
